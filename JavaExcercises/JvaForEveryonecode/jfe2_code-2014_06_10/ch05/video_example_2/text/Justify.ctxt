@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=words\ start
+comment0.target=int\ nextWord(java.lang.String,\ int)
+comment0.text=\n\ \ \ \ \ \ Gets\ the\ starting\ position\ of\ the\ word\ following\ a\ given\ word.\n\ \ \ \ \ \ @param\ words\ a\ string\ containing\ words\n\ \ \ \ \ \ @param\ start\ the\ starting\ position\ of\ a\ word\n\ \ \ \ \ \ @return\ the\ starting\ position\ of\ the\ next\ word,\ or\ words.length()\n\ \ \ \ \ \ if\ there\ is\ no\ more\ word.\ \n
+comment1.params=words
+comment1.target=int\ countWords(java.lang.String)
+comment1.text=\n\ \ \ \ \ \ Counts\ the\ words\ in\ a\ string\n\ \ \ \ \ \ @param\ words\ a\ string\ containing\ words\n\ \ \ \ \ \ @return\ the\ number\ of\ words\ in\ the\ string\n
+comment2.params=line\ margin
+comment2.target=java.lang.String\ format(java.lang.String,\ int)
+comment2.text=\n\ \ \ \ \ \ Formats\ a\ string\ by\ adding\ extra\ spaces\ so\ that\ the\ \n\ \ \ \ \ \ string\ extends\ to\ a\ given\ margin.\n\ \ \ \ \ \ @param\ line\ a\ string\n\ \ \ \ \ \ @param\ margin\ the\ desired\ right\ margin\n\ \ \ \ \ \ @return\ the\ formatted\ line\n
+comment3.params=args
+comment3.target=void\ main([Ljava.lang.String;)
+numComments=4

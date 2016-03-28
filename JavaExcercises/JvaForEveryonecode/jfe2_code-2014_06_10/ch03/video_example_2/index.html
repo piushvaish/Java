@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title"><div class="cell">
+Big Java Late Objects
+<br/>
+Video
+<br/>
+<img src="../bjlo.jpg"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+The Genetic Code
+<br/>
+<img src="dna.png"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Understand the Problem
+</div></div></div>
+<div class="slide figure">
+<p><img src="genetic-code-small.jpg"/></p>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+Draw Flowcharts
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Design an Algorithm
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Design an Algorithm
+</div></div></div>
+<div class="slide marker">
+<div class="marker">
+<p>Read codon string</p>
+<p>Split into first, second, third character</p>
+<pre>
+if (first is U)
+   if (second is U)
+      if (third is U or C)
+         result = Phe
+      else if (third is A or G)
+         result = Leu
+   else if (second is C)
+      result = Ser
+   else ...
+else if (first is C) ...         
+</pre>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Develop Test Cases
+</div></div></div>
+
+<div class="slide marker">
+<div class="marker">
+<p><b>Test Case 1</b>: Occupies four entries</p>
+<p>CGU, CGC, CGA, CGG. Expected outcome: Arg</p>
+<p><b>Test Case 2</b>: Occupies two entries</p>
+<p>AGU, AGC. Expected outcome: Ser<br/>
+AGA, AGG. Expected outcome: Not Ser</p>
+<p><b>Test Case 3</b>: Occupies one entry</p>
+<p>AUG. Expected outcome: Met</p>
+<p><b>Test Case 4</b>: Occupies three entries</p>
+<p>AUU, AUC, AUA. Expected outcome: Ile</p>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Write the Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Test the Program
+</div></div></div>
+
+</body>
+</html>

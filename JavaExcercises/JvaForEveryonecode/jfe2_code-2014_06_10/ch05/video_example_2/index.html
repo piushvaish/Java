@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title">
+<div style="margin: 0; padding=0;">Big Java Late Objects Video</div>
+<div style="margin: 0; padding=0;"><img src="../bjlo.jpg"/>
+</div></div>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+Fully Justified Text
+<br/>
+<img src="open-book.png"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Understand the Problem
+</div></div></div>
+
+<div class="slide"><p><img src="introduction.jpg"/></p></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Calculate by Hand 
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Design an Algorithm
+</div></div></div>
+
+<div class="slide"><div class="marker"><pre><b>main</b>
+MARGIN = 40
+line = ""
+done = false
+while not done
+   word = next word in input
+   if (word is "Q")
+      print line
+      done = true
+   else
+      if word fits on line
+         append word to line
+      else
+         print format(line, MARGIN)
+         line = word
+</pre></div></div>
+
+<div class="slide"><div class="marker"><pre><b>format(line, margin)</b>
+spaces to add = margin - length of line
+gaps = #words in line - 1;
+spaces per gap = spaces to add / gaps
+extra spaces = spaces to add % gaps
+result = ""
+for each word in the line
+   add the word and the space after it to result
+   add spaces to result
+   if extra spaces > 0
+     add another space to result
+     extra spaces--
+return result
+</pre></div></div>
+
+<div class="slide"><div class="marker"><pre><b>nextWord(line, start)</b>
+i = start
+while i < line length and char at i is not a space
+   i++
+while i < line length and char at i is a space
+   i++
+return i
+</pre></div></div>
+
+<div class="slide"><div class="marker"><pre><b>countWords(line)</b>
+count = 0
+next = 0
+while next < line.length()
+   next = nextWord(line, next)
+   count++
+return count
+</pre></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Develop Test Cases
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Write the Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Test the Program
+</div></div></div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Index()
+comment0.text=\n\ \ \ \ \ \ Constructs\ an\ empty\ index.\n
+comment1.params=word
+comment1.target=void\ addWord(java.lang.String)
+comment1.text=\n\ \ \ \ \ \ Adds\ a\ word\ to\ the\ current\ segment.\n\ \ \ \ \ \ @param\ word\ the\ word\ to\ add\n
+comment2.params=
+comment2.target=void\ nextSegment()
+comment2.text=\n\ \ \ \ \ \ Advances\ to\ the\ next\ segment.\n
+comment3.params=
+comment3.target=java.util.Set\ getWords()
+comment3.text=\n\ \ \ \ \ \ Gets\ all\ words\ that\ have\ been\ added.\n\ \ \ \ \ \ @return\ a\ sorted\ set\ of\ all\ words\n
+comment4.params=word
+comment4.target=java.util.Set\ getSegments(java.lang.String)
+comment4.text=\n\ \ \ \ \ \ Gets\ the\ segments\ in\ which\ the\ given\ word\ occurs\n\ \ \ \ \ \ @param\ word\ a\ word\n\ \ \ \ \ \ @return\ a\ sorted\ set\ of\ all\ segments\ in\ which\ the\ word\ occurs\n
+numComments=5

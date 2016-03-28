@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(String[])
+comment1.params=graph
+comment1.target=void\ draw(Graphics)
+numComments=2

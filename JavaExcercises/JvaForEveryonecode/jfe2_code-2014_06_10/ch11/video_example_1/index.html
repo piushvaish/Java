@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title"><div class="cell">
+Big Java Late Objects
+<br/>
+Video
+<br/>
+<img src="../bjlo.jpg" alt="."/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Designing a Baby Naming Program
+<br/>
+<img src="babynames.png" alt="."/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Understand the Problem
+</div></div></div>
+<div class="slide">
+<ul>
+<li>Read file with a large number of boy and girl names</li>
+<li>User specifies the first letter</li>
+<li>User chooses boy or girl names</li>
+<li>Choices for length: short, medium, long, or any combination</li>
+<li>All matching names are displayed whenever a selection changes</li>
+</ul>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+Sketch the User Interface
+</div></div></div>
+<div class="slide">
+Required Components
+<ul>
+<li>A combo box for the first letter</li>
+<li>Radio buttons for boy/girl</li>
+<li>Check boxes for the length options</li>
+<li>A scrolling text area for the result</li>
+</ul>
+</div>
+<div class="slide">
+Layout
+<ul>
+<li>A panel to hold the radio buttons</li>
+<li>Another panel to hold the check boxes</li>
+<li>Another panel to hold the combobox (so it won't grow)</li>
+<li>All three stacked on top of each other—grid layout</li>
+<li>Text area in the middle of a border layout</li>
+</ul>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+Sketch the Layout
+</div></div></div>
+<div class="slide">Listeners<ul>
+<li>All components have the same action</li>
+<li>If anything changes, the result is recomputed</li>
+<li>Attach the same listener to all components</li>
+</ul>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Write the Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Test the Program
+</div></div></div>
+
+</body>
+</html>

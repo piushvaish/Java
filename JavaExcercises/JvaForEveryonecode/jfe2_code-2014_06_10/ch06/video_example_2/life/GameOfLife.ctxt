@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=cells\ i\ j
+comment0.target=int\ countNeighbors(boolean[][],\ int,\ int)
+comment0.text=\n\ \ \ \ \ \ Counts\ the\ live\ neighbors\ of\ a\ given\ location.\n\ \ \ \ \ \ @param\ cells\ the\ array\ of\ cells\n\ \ \ \ \ \ @param\ i\ the\ row\ index\ of\ the\ location\n\ \ \ \ \ \ @param\ j\ the\ column\ index\ of\ the\ location\n\ \ \ \ \ \ @return\ the\ number\ of\ live\ neighbors\n
+comment1.params=current
+comment1.target=boolean[][]\ nextGeneration(boolean[][])
+comment2.params=cells
+comment2.target=void\ init(boolean[][])
+comment2.text=\n\ \ \ \ \ \ Places\ a\ glider\ in\ the\ middle\ of\ the\ cells.\n\ \ \ \ \ \ @param\ cells\ the\ cells\ to\ be\ populated\n
+comment3.params=cells
+comment3.target=void\ init2(boolean[][])
+comment3.text=\n\ \ \ \ \ \ Places\ an\ "R-pentomino"\ in\ the\ middle\ of\ the\ cells.\n\ \ \ \ \ \ @param\ cells\ the\ cells\ to\ be\ populated\n
+comment4.params=cells
+comment4.target=void\ display(boolean[][])
+comment5.params=args
+comment5.target=void\ main([Ljava.lang.String;)
+numComments=6
