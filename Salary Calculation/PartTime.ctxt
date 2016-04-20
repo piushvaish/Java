@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=ppsn\ name\ salary\ months\ expenses\ tax
+comment0.target=PartTime(java.lang.String,\ java.lang.String,\ double,\ double,\ double,\ double)
+comment0.text=\r\n\ Constructor\ for\ Partime\ Staff\ /\ Create\ with\ given\ values\r\n
+comment1.params=newTaxRate
+comment1.target=void\ setTax(double)
+comment1.text=\r\n\ Setter\r\n
+comment2.params=
+comment2.target=double\ getMonths()
+comment2.text=\r\n\ Accessor\r\n
+comment3.params=
+comment3.target=double\ computePay()
+comment3.text=\r\n\ Override\ the\ method\r\n
+numComments=4

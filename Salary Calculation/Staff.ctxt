@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=ppsn\ name\ salary
+comment0.target=Staff(java.lang.String,\ java.lang.String,\ double)
+comment0.text=\r\n\ Create\ a\ Staff\ with\ given\ data.\r\n\r\n\ \ \ \ Staff(Double\ salary,\ String\ name,\ Double\ tax,\ Double\ months,\ Double\ calculatedPay)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ this.salary\ \=\ salary;\r\n\ \ \ \ \ \ \ \ this.salary\ \=\ salary;\r\n\ \ \ \ \ \ \ \ this.tax\ \=\ tax;\r\n\ \ \ \ \ \ \ \ this.months\ \=\ months;\r\n\ \ \ \ \ \ \ \ this.calculatedPay\ \=\ calculatedPay;\r\n\ \ \ \ }\r\n\r\n\ \ \ \ public\ void\ listAll\ ()\ \ \ \ //\ redefined\ from\ "Object"\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ System.out.println("Monthly\ Salary\:\ "\ +\ salary\ +\ "\\n"\ +\r\n\ \ \ \ \ \ \ \ "Name\:\ "\ +\ name\ +\ "\\n"\ +\r\n\ \ \ \ \ \ \ \ "Tax\ Rate\:\ "\ +\ tax\ +\ "\\n"\ +\r\n\ \ \ \ \ \ \ \ "Months\ Worked\:\ "\ +\ months\ +\ "\\n"\ +\r\n\ \ \ \ \ \ \ \ "Calculated\ Pay\:\ "\ +\ calculatedPay);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ //--------------------------------------//\r\n\ \ \ \ \r\n\ \ \ \ /**\r\n\ Constructor\ for\ staff\r\n
+comment1.params=newSalary
+comment1.target=void\ setSalary(double)
+comment1.text=\r\n\ Setter\ or\ Mutator\ for\ salary\r\n
+comment2.params=
+comment2.target=double\ computePay()
+comment2.text=\r\n\ Method\ to\ compute\ the\ pay\r\n
+comment3.params=
+comment3.target=double\ getSalary()
+comment3.text=\r\n\ Getter\ for\ Salary\r\n
+numComments=4

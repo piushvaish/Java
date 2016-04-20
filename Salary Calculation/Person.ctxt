@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=ppsn\ name
+comment0.target=Person(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Create\ a\ customer\ /Constructor\ with\ given\ values\r\n
+comment1.params=
+comment1.target=java.lang.String\ getPpsn()
+comment1.text=\r\n\ Access\ the\ PPS\ Number\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Access\ the\ name\r\n
+numComments=3

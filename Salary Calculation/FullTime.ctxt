@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=ppsn\ name\ salary\ months\ tax
+comment0.target=FullTime(java.lang.String,\ java.lang.String,\ double,\ double,\ double)
+comment0.text=\r\n\ Create\ a\ customer\r\n
+comment1.params=newTaxRate
+comment1.target=void\ setTax(double)
+comment1.text=\r\n\ Setter\ for\ Tax\r\n
+comment2.params=
+comment2.target=double\ computePay()
+comment2.text=\r\n\ Override\ the\ method\r\n
+numComments=3
