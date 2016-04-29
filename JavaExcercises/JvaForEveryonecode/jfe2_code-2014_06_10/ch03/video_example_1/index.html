@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title"><div class="cell">
+Big Java Late Objects
+<br/>
+Video
+<br/>
+<img src="../bjlo.jpg"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Plurals of English Words
+<br/>
+<img src="apples-cherries.png"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Understand the Problem
+</div></div></div>
+<div class="slide marker">
+<div class="marker">
+<ul>
+<li>Generally, add an s to the end: apple - apples</li>
+<li>If the noun ends with ch, s, sh, x, or z, add es: bus - buses</li>
+<li>If the noun ends with a consonant + y, replace the y with ies: cherry - cherries</li>
+<li>There are several hundred irregular nouns that we don't consider: mouse - mice, ox - oxen etc.</li>
+</ul>
+</div>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+Draw a Flowchart
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Design an Algorithm
+</div></div></div>
+<div class="slide marker">
+<div class="marker">
+<pre>
+l = last character of word
+b = character before that
+if word ends with ch, s, sh, x, or z
+  plural = word + "es"
+else if b is a consonant and l is a y
+  plural = word without last character + "ies"
+else
+  plural = word + "s" 
+</pre>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Develop Test Cases
+</div></div></div>
+
+<div class="slide marker">
+<div class="marker">
+<p><b>Test Case 1</b>: Normal case</p>
+<p>car, expected outcome: cars</p>
+<p><b>Test Case 2</b>: Ends with s</p>
+<p>bus, expected outcome: buses</p>
+<p><b>Test Case 3</b>: Ends with consonant + y</p>
+<p>ferry, expected outcome: ferries</p>
+<p><b>Test Case 4</b>: Ends with vowel + y</p>
+<p>day, expected outcome: days</p>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Write the Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Test the Program
+</div></div></div>
+
+</body>
+</html>

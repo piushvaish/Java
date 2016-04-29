@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title"><div class="cell">
+Big Java Late Objects
+<br/>
+Video
+<br/>
+<img src="../bjlo.jpg" alt="."/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Evaluating Cell Phone Plans
+<br/>
+<img src="phone-money.png" alt="."/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Understand the Problem
+</div></div></div>
+<div class="slide"><div class="marker">
+<p>Cell phone costs</p>
+<ul><li>Phone</li>
+<li>Monthly fee includes allowance for minutes/messages/megabyte</li>
+<li>Fees for additional minutes/messages/megabyte </li>
+</ul></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Calculate by Hand 
+</div></div></div>
+
+<div class="slide"><div class="marker">
+<p>Sample plan</p>
+<ul><li>Phone: Free</li>
+<li>Monthly fee $69.95 includes 700 minutes, no messages, 300 megabytes</li>
+<li>Additional minutes $0.40, messages $0.20, megabytes $0.067</li>
+<li>My usage: 900 minutes, 60 messages, 200 megabytes</li>
+</ul></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Design an Algorithm
+</div></div></div>
+
+<div class="slide">
+<div class="marker">
+<pre>
+Prompt for minutes used, messages used, megabytes used.
+Name of cheapest plan = ""
+Cost of cheapest plan = 0
+For each plan
+  Prompt for name of plan, phone cost, monthly fee,
+    free minutes, messages, megabytes,
+    fee for additional minutes, messages, megabytes
+  Compute monthly cost
+  If name of cheapest plan is "" or cost of cheapest plan &gt; monthly cost
+    Name of cheapest plan = name of plan
+    Cost of cheapest plan = monthly cost
+Display name and cost of cheapest plan
+</pre>
+</div>
+</div>
+
+</div></div></div>
+<div class="slide">
+<div class="marker">
+<pre>
+<b>Compute monthly cost</b>
+Monthly cost = Cost of phone / 24 + monthly fee
+If minutes used > free minutes
+  Add (minutes used - free minutes) × additional minute fee to monthly cost
+If messages used > free messages
+  Add (messages used - free messages) × additional message fee to monthly cost 
+If megabyte used > free megabyte
+  Add (megabyte used - free megabyte) × additional megabyte fee to monthly cost
+</pre>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Develop Test Cases
+</div></div></div>
+
+<div class="slide"><div class="marker">
+   <ul>
+      <li>My usage: 900 minutes, 60 messages, 200 megabytes</li>
+      <li>Plan A:
+      <ul><li>Phone: Free</li>
+      <li>Monthly fee $69.95 includes 700 minutes, no messages, 300 megabytes</li>
+      <li>Additional minutes $0.40, messages $0.20, megabytes $0.067</li></ul></li>
+   
+      <li>Plan B:
+      <ul><li>Phone: $395</li>
+      <li>Monthly fee $12.00 includes 500 minutes, no messages, 100 megabytes</li>
+      <li>Additional minutes $0.02, messages $0.0025, megabytes $0.0225</li></ul></li>
+      <li>Monthly costs (computed by hand): Plan A $161.95, Plan B $38.86</li>
+</ul></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Write the Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Test the Program
+</div></div></div>
+
+</body>
+</html>

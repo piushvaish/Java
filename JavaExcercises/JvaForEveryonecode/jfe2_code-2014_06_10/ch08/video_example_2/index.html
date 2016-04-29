@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Big Java Late Objects Video</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <link href="../Slidy2/styles/slidy.css" rel="stylesheet" type="text/css" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" charset="utf-8"
+          src="../Slidy2/scripts/slidy.js">
+  </script>
+  <script type="text/javascript">
+     w3c_slidy.mouse_click_enabled = false
+  </script>
+
+</head>
+
+<body>
+
+<div class="slide"><div class="title"><div class="cell">
+Big Java Late Objects
+<br/>
+Video
+<br/>
+<img src="../bjlo.jpg"/>
+</div></div></div>
+<div class="slide"><div class="title"><div class="cell">
+Modeling a Robot Escaping from a Maze
+<br/>
+<img src="maze.png"/>
+</div></div></div>
+<div class="slide">
+Robot uses "right hand rule" to escape a maze:<pre>
+         *****************************
+         ** ***                      *
+         ** *** * ********************
+         ** *** *         *          *
+         ** *** * *******   **** *****
+         **     * ************** *****
+         ****** ******* *******  *****
+         ******         ******* ******
+         *      ******* ******* ******
+         * **** ******* **           *
+         *    ********* ******* ******
+         * **** ******* ***     ******
+         ************** **************</pre>
+</div>
+<div class="slide">
+<ul>
+<li>Robot has position in maze (row, column)</li>
+<li>Robot has direction: North, East, South, West
+</li>
+<li>Robot can turn left or right (changing direction)</li>
+<li>Robot can move forward (in current direction)</li>
+<li>Robot can look straight ahead</li>
+<li>Robot can tell if it's at exit</li>
+</ul>
+</div>
+<div class="slide">
+Public interface suffices to find exit:
+<div class="marker">
+<pre>
+
+While robot is not at exit
+  If robot sees a wall
+    Turn left
+  Else
+    Move
+    Turn right (to look whether there is still a wall)
+    If robot sees a wall
+      Turn left (back to original position)
+    Else (oops, no wall)
+      Move (now must be next to another wall&mdash;see sketch)
+</pre>
+</div>
+</div>
+
+<div class="slide"><div class="title"><div class="cell">
+Design the Class
+</div></div></div>
+<div class="slide">
+Public interface
+<pre>
+public class Robot
+{
+   public void move() 
+   public void turnRight()
+   public void turnLeft()
+   public boolean seesWall()
+   public boolean seesExit()
+}
+</pre>
+</div>
+<div class="slide">
+Data representation
+<pre>
+public class Robot
+{
+   private int row;
+   private int column;
+   private int direction;
+
+   private static final int NORTH = 0;
+   private static final int EAST = 1;
+   private static final int SOUTH = 2;
+   private static final int WEST = 3;
+   . . .
+}
+</pre>
+</div>
+<div class="slide">
+Implementing movement
+<pre>
+public class Robot
+{
+   . . .
+   public void move()
+   {
+      if (direction == NORTH) { row--; }
+      else if (direction == SOUTH) { row++; }
+      if (direction == WEST) { column--; }
+      else if (direction == EAST) { column++; }
+   }
+
+   public void turnRight()
+   {
+      direction = (direction + 1) % DIRECTIONS;
+   }
+}
+</pre>
+</div>
+<div class="slide">
+Maze awareness
+<pre>
+public class Robot
+{
+   private Maze maze; 
+   . . .
+   public boolean seesExit()
+   {
+      return maze.isExit(row, column);
+   }
+
+   public boolean seesWall()
+   {
+      int rowAhead = ...;
+      int columnAhead = ...;
+      return maze.isWall(rowAhead, columnAhead);
+   }
+}
+</pre>
+</div>
+<div class="slide">
+Maze class
+<pre>
+public class Maze
+{
+   private String[] cells;
+   public boolean isWall(int row, int column)
+   {
+      return cells[row].charAt(column) == '*';
+   }
+   public boolean isExit(int row, int column)
+   {
+      return (row == 0 || row == cells.length - 1 
+         || column == 0 
+         || column == cells[row].length() - 1)
+         && cells[row].charAt(column) == ' ';
+   }
+}
+</pre>
+</div>
+<div class="slide"><div class="title"><div class="cell">
+The Program
+</div></div></div>
+
+<div class="slide"><div class="title"><div class="cell">
+Running the Program
+</div></div></div>
+
+</body>
+</html>

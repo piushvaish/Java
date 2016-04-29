@@ -1,0 +1,19 @@
+1. From the "Origin of Species"
+
+When on board H.M.S. Beagle, as naturalist, I was much struck with
+certain facts in the distribution of the organic beings inhabiting
+South America, and in the geological relations of the present to the
+past inhabitants of that continent. 
+Q
+
+2. A word that is longer than the margin (40 characters)
+
+Such a "word" can occur as a table header. For example, 
++====+====+====+====+====+====+====+====+====+ is 46 characters long.
+It will stick out of the margin, but it should not cause a 
+program crash.
+Q
+
+3. No words at all
+
+Q

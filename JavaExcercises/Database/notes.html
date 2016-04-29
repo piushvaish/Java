@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+// write your code here
+Connection connection = null;
+try {
+connection = ConnectionConfiguration.getConnection();
+if (connection != null) {
+System.out.println("Connection established!");
+}
+} catch (Exception e) {
+e.printStackTrace();
+} finally {
+//close the connection
+if (connection != null) {
+try {
+connection.close();
+} catch (SQLException e) {
+e.printStackTrace();
+}
+
+}
+}
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=shapes\ xmax\ ymax
+comment0.target=void\ fillWithRandom([LShape;,\ int,\ int)
+comment0.text=\ Generates\ random\ shapes\n\ @param\ shapes\ the\ array\ to\ fill\ with\ shapes\n\ @param\ xmax\ the\ maximum\ x-position\n\ @param\ ymax\ the\ maximum\ y-position\n
+comment1.params=shapes
+comment1.target=void\ moveBySmallAmount([LShape;)
+comment1.text=\n\ Moves\ each\ shape\ by\ a\ small\ amount.\n\ @param\ shapes\ the\ shapes\n
+comment2.params=shapes\ margin
+comment2.target=void\ lineUp([LShape;,\ int)
+comment2.text=\n\ Lines\ up\ shapes\ in\ rows.\n\ @param\ shapes\ the\ shapes\n\ @param\ margin\ the\ right\ margin\ at\ which\ a\ new\ row\ should\ start\n
+comment3.params=args
+comment3.target=void\ main([Ljava.lang.String;)
+comment4.params=g
+comment4.target=void\ paintComponent(java.awt.Graphics)
+comment5.params=event
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=event
+comment6.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment7.params=event
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=8

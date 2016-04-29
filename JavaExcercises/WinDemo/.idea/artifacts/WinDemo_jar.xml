@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WinDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WinDemo_jar</output-path>
+    <root id="archive" name="WinDemo.jar">
+      <element id="module-output" name="WinDemo" />
+    </root>
+  </artifact>
+</component>

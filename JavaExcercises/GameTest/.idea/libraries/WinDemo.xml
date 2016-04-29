@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WinDemo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../WinDemo/out/artifacts/WinDemo_jar/WinDemo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,24 @@
+package com.piushvaish;
+
+/**
+ * Created by piush on 27/03/2016.
+ */
+public class BinarySearch {
+    public int search(int[]a,int low,int high,int value){
+        if(low <= high){
+            int mid = (low + high)/2;
+            if(a[mid] == value){
+                return mid;
+            }else if(a[mid] < value){
+                return search(a,mid + 1,high,value);
+
+            } else {
+                return search(a,low,mid -1,value);
+            }
+        }
+        else {
+            return -1;
+        }
+
+    }
+}

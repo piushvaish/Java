@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=dx\ dy
+comment0.target=void\ move(int,\ int)
+comment0.text=\n\ \ \ \ \ \ Moves\ this\ shape\ by\ the\ given\ amount.\n\ \ \ \ \ \ @param\ dx\ the\ amount\ to\ move\ by\ in\ x-direction\n\ \ \ \ \ \ @param\ dy\ the\ amount\ to\ move\ by\ in\ y-direction\n
+comment1.params=
+comment1.target=int\ getCenterX()
+comment1.text=\n\ \ \ \ \ \ Gets\ the\ x-position\ of\ the\ center\ of\ this\ shape.\n\ \ \ \ \ \ @return\ the\ x-position\ of\ the\ center\ \n
+comment2.params=
+comment2.target=int\ getCenterY()
+comment2.text=\n\ \ \ \ \ \ Gets\ the\ y-position\ of\ the\ center\ of\ this\ shape.\n\ \ \ \ \ \ @return\ the\ y-position\ of\ the\ center\ \n
+comment3.params=g
+comment3.target=void\ draw(java.awt.Graphics)
+comment3.text=\n\ \ \ \ \ \ Draws\ this\ shape\n\ \ \ \ \ \ g\ the\ Graphics\ object\ for\ the\ window\ in\ which\ the\ shape\ is\ drawn\n
+numComments=4
