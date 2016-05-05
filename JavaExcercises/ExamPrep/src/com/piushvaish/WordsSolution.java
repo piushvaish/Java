@@ -8,7 +8,7 @@ import java.io.FileReader;
  */
 public class WordsSolution {
     static final int NUMWORDS = 235886;
-    static final String FILENAME = "C:\\Users\\piush\\Desktop\\Programming\\Java\\JavaExcercises\\ExamPrep\\src\\shuffled.txt";
+    static final String FILENAME = "shuffled.txt";
 
     public static void main(String[] args) {
         String[] words = readWords(FILENAME, NUMWORDS);
